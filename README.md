@@ -1,15 +1,17 @@
-#cgmlst
+[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) ![](https://img.shields.io/badge/Language-Perl_5-steelblue.svg)
 
-Fork of Torsten Seemanns excellent [mlst](https://github.com/tseemann/mlst) tool modified for cgMLST. Only campylobacter and ecoli cgMLST schemes available but others may work as well.
+# cgmlst
+
+Fork of Torsten Seemanns excellent [mlst](https://github.com/tseemann/mlst) tool modified for cgMLST. Only campylobacter and ecoli cgMLST schemes available but others may work as well. 
 Text below was crudely adapted from the readme of mlst
 
-##Quick Start
+## Quick Start
 
-    % cgmlst --scheme=ecoli contigs.fa
+    % cgmlst --scheme=ecoli contigs.fa > output.tsv
 
-##Installation
+## Installation
 
-###Source
+### Source
 
     % cd $HOME
     % git clone https://github.com/aldertzomer/cgmlst.git
@@ -17,7 +19,7 @@ Text below was crudely adapted from the readme of mlst
     % bash getdb.sh #needs wget
 
     
-###Dependencies
+### Dependencies
 
 * [NCBI BLAST+ blastn](https://www.ncbi.nlm.nih.gov/books/NBK279671/) 
   * You probably have `blastn` already installed already.
@@ -28,7 +30,7 @@ Text below was crudely adapted from the readme of mlst
 * Wget
   * Debian: `sudo apt-get install wget`
 
-##Usage
+## Usage
 
 Simply just give it a genome file in FASTA or GenBank file!
 
@@ -40,7 +42,7 @@ It returns a tab-separated line containing
 * the ST (sequence type)
 * the allele IDs
 
-##Available schemes
+## Available schemes
 
 To see which PubMLST schemes are supported:
 
@@ -48,7 +50,7 @@ To see which PubMLST schemes are supported:
     
     campylobacter ecoli
 
-##Missing data
+## Missing data
 
 cgmlst does not just look for exact matches to full length alleles. 
 It attempts to tell you as much as possible about what it found using the
@@ -56,17 +58,17 @@ notation below:
 
 Symbol | Meaning
 --- | ---
-n | exact intact allele
-~n | novel allele similar to n
-n? | partial match to known allele
-n,m | multiple alleles
-- | allele missing
+`n` | exact intact allele
+`~n` | novel allele similar to n
+`n?` | partial match to known allele
+`n,m` | multiple alleles
+`-` | allele missing
 
-##Bugs
+## Bugs
 
 Please submit via the Github Issues page: https://github.com/aldertzomer/cgmlst/issues
 
-##Licence
+## License
 
 GPLv2: https://raw.githubusercontent.com/aldertzomer/cgmlst/master/LICENSE
 
