@@ -2,7 +2,7 @@
 
 # cgmlst
 
-Fork of Torsten Seemanns excellent [mlst](https://github.com/tseemann/mlst) tool modified for cgMLST. Only campylobacter and ecoli cgMLST schemes available but others may work as well. 
+Fork of Torsten Seemanns excellent [mlst](https://github.com/tseemann/mlst) tool modified for cgMLST. Schemes supported are campylobacter, ecoli and Lmono. Others may work as well. 
 Text below was crudely adapted from the readme of mlst
 
 ## Quick Start
