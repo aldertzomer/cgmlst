@@ -38,7 +38,6 @@ Simply just give it a genome file in FASTA or GenBank file!
 
 It returns a tab-separated line containing
 * the filename
-* the closest PubMLST scheme name
 * the ST (sequence type)
 * the allele IDs
 
@@ -48,7 +47,7 @@ To see which PubMLST schemes are supported:
 
     % cgmlst --list
     
-    campylobacter ecoli
+    Lmono campylobacter ecoli 
 
 ## Missing data
 
