@@ -16,7 +16,7 @@ Text below was crudely adapted from the readme of mlst
     % cd $HOME
     % git clone https://github.com/aldertzomer/cgmlst.git
     % cd cgmlst
-    % bash getdb.sh #needs wget
+    % bash getdb.sh #needs wget. May take some time on slow connections. 
 
     
 ### Dependencies
